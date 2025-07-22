@@ -36,5 +36,15 @@ namespace Assignment_3._2._1
                 Console.WriteLine("|");
             }
         }
+        public void Add(Matrix matrix)
+        {
+            for(int row = 0; row < matrix.Values.GetLength(0); row++)
+            {
+                for(int col = 0; col < matrix.Values.GetLength(1); col++)
+                {
+                    Values[row, col] += matrix.Values[row, col];
+                }
+            }
+        }
     }
 }
